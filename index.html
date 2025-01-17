@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Número Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container__informacoes">
+            <h1>🎉 Bem-vindo ao Jogo do Número Secreto!</h1>
+            <p>🌟 O objetivo é adivinhar um número entre 1 e <span id="numero-maximo"></span></p>
+        </div>
+
+        <div class="container__conteudo">
+            <div>
+                <!-- Campo de input para o chute -->
+                <input type="number" id="entrada-chute" placeholder="Digite seu palpite" class="container__texto" />
+                
+                <!-- Botão para enviar o chute -->
+                <button id="botao-enviar" class="container__botao">Enviar Palpite</button>
+                
+                <!-- Onde o feedback será exibido -->
+                <p id="feedback" class="container__texto-azul"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir o arquivo JavaScript -->
+    <script src="app.js"></script>
+
+
+</body>
+</html>
